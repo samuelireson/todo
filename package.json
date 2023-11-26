@@ -2,7 +2,8 @@
   "name": "todo-cli",
   "version": "1.0.0",
   "description": "A CLI to track TODOs",
-  "main": "index.js",
+  "main": "bin/index.js",
+  "type": "module",
   "scripts": {
     "test": "test"
   },
@@ -11,12 +12,22 @@
     "url": "git+https://github.com/samuelireson/todo.git"
   },
   "keywords": [
-    "TODO"
+    "cli"
   ],
   "author": "Samuel Ireson",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/samuelireson/todo/issues"
   },
-  "homepage": "https://github.com/samuelireson/todo#readme"
+  "homepage": "https://github.com/samuelireson/todo#readme",
+  "bin": {
+    "todo": "./bin/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3",
+    "figlet": "^1.7.0",
+    "inquirer": "^9.2.12",
+    "yargs": "^17.7.2"
+  }
 }
