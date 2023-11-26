@@ -11,8 +11,8 @@ import remove from '../utils/delete.js'
 const yargs = Yargs(process.argv.slice(2))
 
 yargs
-    .option('c', { alias: 'create', describe: 'Create a new TODO', type: 'boolean' })
-    .option('l', { alias: 'list', describe: 'List all TODOs', type: 'boolean' })
+    .option('c', { alias: 'create', describe: 'Create a TODO', type: 'boolean' })
+    .option('l', { alias: 'list', describe: 'List TODOs', type: 'boolean' })
     .option('u', { alias: 'update', describe: 'Update a TODO', type: 'boolean' })
     .option('d', { alias: 'delete', describe: 'Delete a TODO', type: 'boolean' })
     .help()
